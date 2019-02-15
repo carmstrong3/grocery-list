@@ -1,0 +1,15 @@
+Functional Requirements
+
+1. Save, Update, and Delete items to/from a database of your choosing.
+	a. Stay w/PostgreSQL or try out something else?
+2. Authenticate users - allowing the same user to be signed in from multiple devices.
+	a. Passport?
+3. Allow add, edit, delete, “mark as purchased”, and “unmark as purchased” on each item.
+	a. React (this is a state). (Use redux just cuz? We're only talking about like 5 states)
+4. Keep the list synced in real time from each device.
+	a. Make linkedlist?
+	b. package for this?
+5. Accompany your code with a full test suite.
+	a. Jasmine? React has it's suite.
+6. Deploy your site to a web host (e.g., on Amazon EC2, Heroku, Netlify, Google AppEngine, etc.).
+	a. Amazon for the resume?
