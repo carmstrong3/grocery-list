@@ -15,4 +15,4 @@ describe("routes : static", () => {
       })
     })
   })
-}
+});
