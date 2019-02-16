@@ -7,7 +7,7 @@ module.exports = {
       if(err){ // if error, redirect to homepage
         res.redirect(500, "static/index");
       } else { // render the list of lists
-        res.render("lists/index", {lists});
+        res.send(lists);
       }
     })
   },

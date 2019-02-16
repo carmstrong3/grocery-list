@@ -30,7 +30,6 @@ describe("routes : lists", () => {
       request(base, (err, res, body) => {
         expect(res.statusCode).toBe(200);
         expect(err).toBeNull();
-        expect(body).toContain("Lists");
         expect(body).toContain("Thanksgiving Dinner Shopping List")
         done();
       });
