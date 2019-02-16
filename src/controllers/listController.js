@@ -1,6 +1,15 @@
+const listQueries = require("../db/queries.lists.js");
+
 module.exports = {
   index(req, res, next){
-    res.send("items will be here soon")
+    // use getAllLists method to bring all the lists in database
+    listQueries.getAllLists((err, lists) => {
+      if(err){ // if error, redirect to homepage
+        res.redirect(500, "static/index");
+      } else { // render the list of lists
+        res.render("lists/index", {lists});
+      }
+    })
   },
 
   listById(req, res, next){
